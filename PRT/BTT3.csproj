@@ -51,28 +51,28 @@
   <ItemGroup>
     <Compile Include="DBConnection.cs" />
     <Compile Include="Giaovien.cs" />
-    <Compile Include="QLHS.cs">
+    <Compile Include="fHocSinh.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QLHS.Designer.cs">
-      <DependentUpon>QLHS.cs</DependentUpon>
+    <Compile Include="fHocSinh.Designer.cs">
+      <DependentUpon>fHocSinh.cs</DependentUpon>
     </Compile>
-    <Compile Include="QLGV.cs">
+    <Compile Include="fGiaoVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QLGV.Designer.cs">
-      <DependentUpon>QLGV.cs</DependentUpon>
+    <Compile Include="fGiaoVien.Designer.cs">
+      <DependentUpon>fGiaoVien.cs</DependentUpon>
     </Compile>
     <Compile Include="GiaovienDAO.cs" />
     <Compile Include="Hocsinh.cs" />
     <Compile Include="HocsinhDAO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="QLHS.resx">
-      <DependentUpon>QLHS.cs</DependentUpon>
+    <EmbeddedResource Include="fHocSinh.resx">
+      <DependentUpon>fHocSinh.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="QLGV.resx">
-      <DependentUpon>QLGV.cs</DependentUpon>
+    <EmbeddedResource Include="fGiaoVien.resx">
+      <DependentUpon>fGiaoVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

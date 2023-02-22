@@ -16,7 +16,7 @@ namespace PRT
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new QLHS());
+            Application.Run(new fHocSinh());
         }
     }
 }

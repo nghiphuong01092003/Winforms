@@ -20,17 +20,17 @@ namespace PRT
         }
         public void Them(Giaovien gv)
         {
-            string sqlStr = string.Format("INSERT INTO Giaovien(magv, ten, quequan, sdt, email, ngaysinh) VALUES ('{0}', '{1}', '{2}', '{3}','{4}', '{5}')", gv.magv, gv.hoten, gv.quequan, gv.sdt, gv.email, gv.ngaysinh);
+            string sqlStr = string.Format("INSERT INTO Giaovien(magv, hoten, quequan, sdt, email, ngaysinh) VALUES ('{0}', '{1}', '{2}', '{3}','{4}', '{5}')", gv.Magv, gv.Hoten, gv.Quequan, gv.Sdt, gv.Email, gv.Ngaysinh);
             dbconn.Thucthi(sqlStr, "them");
         }
         public void Xoa(Giaovien gv)
         {
-            string sqlStr = string.Format("DELETE FROM Giaovien WHERE Ten = '{0}'", gv.hoten);
+            string sqlStr = string.Format("DELETE FROM Giaovien WHERE hoten = '{0}'", gv.Hoten);
             dbconn.Thucthi(sqlStr, "xoa");
         }
         public void Sua(Giaovien gv)
         {
-            string sqlStr = string.Format("UPDATE Giaovien SET Ten = '{0}' WHERE Quequan = '{1}'", gv.hoten, gv.quequan);
+            string sqlStr = string.Format("UPDATE Giaovien SET hoten = '{0}' WHERE quequan = '{1}'", gv.Hoten, gv.Quequan);
             dbconn.Thucthi(sqlStr, "sua");
         }
     }

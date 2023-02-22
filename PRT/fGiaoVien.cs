@@ -11,11 +11,11 @@ using System.Windows.Forms;
 
 namespace PRT
 {
-    public partial class QLGV : Form
+    public partial class fGiaoVien : Form
     {
         SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
         GiaovienDAO gvDao = new GiaovienDAO();
-        public QLGV()
+        public fGiaoVien()
         {
             InitializeComponent();
         }

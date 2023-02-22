@@ -18,3 +18,4 @@ INSERT INTO GiaoVien(hoten,diachi,sdt,email,ngaysinh)
 VALUES ('NTA','bd','101112','ant.email.com',01/01/1985)
 
 SELECT*FROM GiaoVien
+DELETE FROM GiaoVien

@@ -1,6 +1,6 @@
 ﻿namespace PRT
 {
-    partial class QLGV
+    partial class fGiaoVien
     {
         /// <summary>
         /// Required designer variable.
@@ -44,6 +44,12 @@
             this.dtpNgaysinh = new System.Windows.Forms.DateTimePicker();
             this.lblMagv = new System.Windows.Forms.Label();
             this.txtMaGV = new System.Windows.Forms.TextBox();
+            this.hMaGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hHoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hQueQuan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hSdt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hNgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dsGV)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,7 +73,7 @@
             // 
             // txtTen
             // 
-            this.txtTen.Location = new System.Drawing.Point(122, 85);
+            this.txtTen.Location = new System.Drawing.Point(122, 28);
             this.txtTen.Name = "txtTen";
             this.txtTen.Size = new System.Drawing.Size(200, 22);
             this.txtTen.TabIndex = 3;
@@ -82,6 +88,13 @@
             // dsGV
             // 
             this.dsGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dsGV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.hMaGV,
+            this.hHoTen,
+            this.hQueQuan,
+            this.hSdt,
+            this.hEmail,
+            this.hNgaySinh});
             this.dsGV.Location = new System.Drawing.Point(358, 34);
             this.dsGV.Name = "dsGV";
             this.dsGV.RowHeadersWidth = 51;
@@ -177,12 +190,60 @@
             // 
             // txtMaGV
             // 
-            this.txtMaGV.Location = new System.Drawing.Point(122, 34);
+            this.txtMaGV.Location = new System.Drawing.Point(122, 79);
             this.txtMaGV.Name = "txtMaGV";
             this.txtMaGV.Size = new System.Drawing.Size(200, 22);
             this.txtMaGV.TabIndex = 19;
             // 
-            // QLGV
+            // hMaGV
+            // 
+            this.hMaGV.DataPropertyName = "MaGV";
+            this.hMaGV.HeaderText = "Mã GV";
+            this.hMaGV.MinimumWidth = 6;
+            this.hMaGV.Name = "hMaGV";
+            this.hMaGV.Width = 125;
+            // 
+            // hHoTen
+            // 
+            this.hHoTen.DataPropertyName = "HoTen";
+            this.hHoTen.HeaderText = "Họ Tên";
+            this.hHoTen.MinimumWidth = 6;
+            this.hHoTen.Name = "hHoTen";
+            this.hHoTen.Width = 125;
+            // 
+            // hQueQuan
+            // 
+            this.hQueQuan.DataPropertyName = "QueQuan";
+            this.hQueQuan.HeaderText = "Quê quán";
+            this.hQueQuan.MinimumWidth = 6;
+            this.hQueQuan.Name = "hQueQuan";
+            this.hQueQuan.Width = 125;
+            // 
+            // hSdt
+            // 
+            this.hSdt.DataPropertyName = "Sdt";
+            this.hSdt.HeaderText = "SĐT";
+            this.hSdt.MinimumWidth = 6;
+            this.hSdt.Name = "hSdt";
+            this.hSdt.Width = 125;
+            // 
+            // hEmail
+            // 
+            this.hEmail.DataPropertyName = "Email";
+            this.hEmail.HeaderText = "Email";
+            this.hEmail.MinimumWidth = 6;
+            this.hEmail.Name = "hEmail";
+            this.hEmail.Width = 125;
+            // 
+            // hNgaySinh
+            // 
+            this.hNgaySinh.DataPropertyName = "Ngaysinh";
+            this.hNgaySinh.HeaderText = "Ngày sinh";
+            this.hNgaySinh.MinimumWidth = 6;
+            this.hNgaySinh.Name = "hNgaySinh";
+            this.hNgaySinh.Width = 125;
+            // 
+            // fGiaoVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -203,8 +264,8 @@
             this.Controls.Add(this.txtTen);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Name = "QLGV";
-            this.Text = "GiaoVien";
+            this.Name = "fGiaoVien";
+            this.Text = "fGiaoVien";
             this.Load += new System.EventHandler(this.QLGV_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dsGV)).EndInit();
             this.ResumeLayout(false);
@@ -230,5 +291,11 @@
         private System.Windows.Forms.DateTimePicker dtpNgaysinh;
         private System.Windows.Forms.Label lblMagv;
         private System.Windows.Forms.TextBox txtMaGV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hMaGV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hHoTen;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hQueQuan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hSdt;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hEmail;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hNgaySinh;
     }
 }

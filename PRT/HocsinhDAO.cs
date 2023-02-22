@@ -19,18 +19,19 @@ namespace PRT
         }
         public void Them(Hocsinh hs)
         {
-            string sqlStr = string.Format("INSERT INTO Hocsinh(masv, hoten, quequan, cmnd, sdt, email, ngaysinh) VALUES ('{0}', '{1}', '{2}', '{3}','{4}','{5}', '{6}')", hs.masv, hs.hoten, hs.quequan, hs.cmnd, hs.sdt, hs.email, hs.ngaysinh);
-            dbconn.Thucthi(sqlStr,"them");
+            string sqlStr = string.Format("INSERT INTO Hocsinh(mahs, hoten, quequan, cmnd, diem, sdt, email, ngaysinh) VALUES ('{0}', '{1}', '{2}', '{3}','{4}','{5}', '{6}', '{7}')", hs.Mahs, hs.Hoten, hs.Quequan, hs.Diem, hs.Cmnd, hs.Sdt, hs.Email, hs.Ngaysinh);
+            dbconn.checkdata(txtMasv,txtTen, txtQuequan, txtCmnd, txtSdt, txtEmail);
+            dbconn.Thucthi(sqlStr,"Them");
         }
         public void Xoa(Hocsinh hs)
         {
-            string sqlStr = string.Format("DELETE FROM Hocsinh WHERE Ten = '{0}'", hs.hoten);
-            dbconn.Thucthi(sqlStr, "xoa");
+            string sqlStr = string.Format("DELETE FROM HocSinh WHERE hoten = '{0}'", hs.Hoten);
+            dbconn.Thucthi(sqlStr, "Xoa");
         }
         public void Sua(Hocsinh hs)
         {
-            string sqlStr = string.Format("UPDATE Hocsinh SET Ten = '{0}' WHERE CMND = '{1}'", hs.hoten, hs.cmnd);
-            dbconn.Thucthi(sqlStr, "sua");
+            string sqlStr = string.Format("UPDATE HocSinh SET hoten = '{0}' WHERE cmnd = '{1}'", hs.Hoten, hs.Cmnd);
+            dbconn.Thucthi(sqlStr, "Sua");
         }
     }
 }
